@@ -1,0 +1,118 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: gray;
+
+}
+
+header{
+    padding:  2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#new-task-form{
+    display: flex;
+}
+input, button {
+    appearance: none;
+    border: none;
+    outline:none;
+    background: none;
+}
+#new-task-input{
+    flex: 1 1 0%;
+    background-color: rgb(26, 24, 24);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: rgb(209, 205, 205);
+    font-size: 1.25rem;
+}
+#new-task-input::placeholder{
+    color: rgb(116, 113, 113);
+}
+
+#new-task-submit {
+    color: rgb(209, 205, 205);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#new-task-submit:hover{
+    opacity: 0.6;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#lists .list{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(26, 24, 24);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#lists .list .content {
+    flex: 1 1 0%;
+}
+
+#lists .list .content .text{
+    color: rgb(209, 205, 205);
+    font-size: 16px;
+    width: 100%;
+    display: block;
+}
+
+#lists .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.list .actions button{
+    color: rgb(209, 205, 205);
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+
+.list .actions button:hover{
+    opacity: 0.6;
+}
+
+.list .actions .delete{
+    color: red;
+}
